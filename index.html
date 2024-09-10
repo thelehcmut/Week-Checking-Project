@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Roll Call</title>
+
+    <!-- add Montserrant font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Daily Roll Call for a Week</h1>
+
+    <form action="" method="post">
+      <ul>
+        <li>
+          <label for="monday">Mon</label>
+          <input type="checkbox" name="monday" id="monday" />
+        </li>
+        <li>
+          <label for="tuesday">Tue</label>
+          <input type="checkbox" name="tuesday" id="tuesday" />
+        </li>
+        <li>
+          <label for="wednesday">Wed</label>
+          <input type="checkbox" name="wednesday" id="wednesday" />
+        </li>
+        <li>
+          <label for="thursday">Thu</label>
+          <input type="checkbox" name="thursday" id="thursday" />
+        </li>
+        <li>
+          <label for="friday">Fri</label>
+          <input type="checkbox" name="friday" id="friday" />
+        </li>
+        <li>
+          <label for="saturday">Sat</label>
+          <input type="checkbox" name="saturday" id="saturday" />
+        </li>
+        <li>
+          <label for="sunday">Sun</label>
+          <input type="checkbox" name="sunday" id="sunday" />
+        </li>
+      </ul>
+
+      <button type="reset">Reset</button>
+      <button type="button" id="restore_btn">Restore</button>
+    </form>
+
+    <div id="greeting"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
